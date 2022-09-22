@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Twofold.dir/file/file.cpp.o CMakeFiles/Twofold.dir/twofold.cpp.o -o Twofold 

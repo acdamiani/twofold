@@ -1,0 +1,5 @@
+/home/acdamiani/Documents/twofold/build/CMakeFiles/edit_cache.dir
+/home/acdamiani/Documents/twofold/build/CMakeFiles/rebuild_cache.dir
+/home/acdamiani/Documents/twofold/build/src/CMakeFiles/twofold.dir
+/home/acdamiani/Documents/twofold/build/src/CMakeFiles/edit_cache.dir
+/home/acdamiani/Documents/twofold/build/src/CMakeFiles/rebuild_cache.dir
