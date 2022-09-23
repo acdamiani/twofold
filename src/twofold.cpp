@@ -24,10 +24,10 @@ int main(int argc, char* argv[]) {
 
   std::vector<float> sa = a.samples();
 
-  int err;
-  pa_simple_write(s, sa.data(), sa.size(), &err);
+  printf("3: %zu\n", sa.size());
 
-  printf("%d\n", err);
+  int err;
+  pa_simple_write(s, sa.data(), sizeof(float) * sa.size(), &err);
 
   return 0;
 }

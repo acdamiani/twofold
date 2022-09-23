@@ -165,6 +165,8 @@ bool Audio<T>::load(std::vector<uint8_t> buffer, AudioType type) {
 
       samples_.resize(channels_);
 
+      printf("%zu\n", num_samples);
+
       for (size_t i = 0; i < num_samples; i++) {
         for (uint16_t c = 0; c < channels_; c++) {
           size_t i_samp =
@@ -255,6 +257,9 @@ std::vector<T> Audio<T>::samples() const {
     }
   }
 
+  printf("1: %zu\n", ret.size());
+  printf("2: %zu\n", samples_[0].size());
+
   return ret;
 }
 
@@ -271,6 +276,11 @@ bool Audio<T>::stereo() const {
 template <class T>
 AudioFmt Audio<T>::format() const {
   return format_;
+}
+
+template <class T>
+double Audio<T>::length() const {
+  return (double)samples_.at(0).size() / (double)sample_rate_;
 }
 
 template <class T>

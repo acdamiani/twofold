@@ -38,6 +38,7 @@ class Audio {
 
   AudioFmt format() const;
   SmpFmt sample_format() const;
+  double length() const;
   uint16_t channels() const;
   uint32_t sample_rate() const;
   uint32_t filesize() const;
