@@ -1,77 +1,76 @@
 #pragma once
 
+#include <arpa/inet.h>
+#include <cstdint>
 #include <string>
 #include <vector>
-#include <cstdint>
-#include <arpa/inet.h>
 
-enum class AudioFmt
-{
-    ERROR,
-    NOT_LOADED,
-    WAVE
-};
+enum class AudioFmt { ERROR, NOT_LOADED, WAVE };
 
-enum class AudioType
-{
-    WAVE,
-    NONE
-};
+enum class AudioType { WAVE, NONE };
 
-enum class AudioChannels
-{
-    MONO,
-    STEREO
+enum SmpFmt {
+  PCM = 0x0001,
+  IEEE_FLOAT = 0x0003,
+  A_LAW = 0x0006,
+  MU_LAW = 0x0007,
+  EXTENSIBLE = 0xFFFE,
 };
 
 template <class T>
-class Audio
-{
-public:
-    static AudioType str_to_type(std::string str);
+class Audio {
+ public:
+  static AudioType str_to_type(std::string str);
 
-    Audio();
-    Audio(std::string file);
+  Audio();
+  Audio(std::string file);
 
-    bool load(std::string file);
-    bool load(std::string file, AudioType type);
-    bool load(std::vector<uint8_t> buf, AudioType type);
+  std::vector<T> samples() const;
 
-    AudioFmt get_format() const;
-    AudioChannels get_channels() const;
-    uint32_t get_sample_rate() const;
-    uint32_t get_filesize() const;
-    uint16_t get_bit_depth() const;
-    uint16_t get_sample_freq() const;
-    uint16_t get_block_alignment() const;
-private:
-    enum class Endian
-    {
-        LITTLE,
-        BIG
-    };
+  bool load(std::string file);
+  bool load(std::string file, AudioType type);
+  bool load(std::vector<uint8_t> buf, AudioType type);
 
-    enum class WavFmt
-    {
-        PCM = 0x0001,
-        IEEEFloat = 0x0003,
-        Alaw = 0x0006,
-        MULaw = 0x0007,
-        Extensible = 0xFFFE,
-    };
+  void reset();
 
-    size_t get_chunk_index(std::vector<uint8_t> buffer, const std::string chunk, size_t index) const;
+  bool mono() const;
+  bool stereo() const;
 
-    uint16_t two_byte_int(std::vector<uint8_t> buffer, size_t index, Endian endian = Endian::LITTLE) const;
-    uint32_t four_byte_int(std::vector<uint8_t> buffer, size_t index, Endian endian = Endian::LITTLE) const;
+  AudioFmt format() const;
+  SmpFmt sample_format() const;
+  uint16_t channels() const;
+  uint32_t sample_rate() const;
+  uint32_t filesize() const;
+  uint16_t bit_depth() const;
+  uint16_t sample_freq() const;
+  uint16_t block_alignment() const;
 
-    std::string fmt_from_int(uint16_t fmt) const;
+ private:
+  enum Endian { LITTLE, BIG };
 
-    AudioFmt format;
-    AudioChannels channels;
-    uint32_t sample_rate;
-    uint32_t filesize;
-    uint16_t bit_depth;
-    uint16_t sample_freq;
-    uint16_t block_alignment;
+  std::vector<std::vector<T>> samples_;
+
+  size_t get_chunk_index(std::vector<uint8_t> buffer, const std::string chunk,
+                         size_t index) const;
+
+  uint16_t two_byte_int(std::vector<uint8_t>& buffer, size_t index,
+                        Endian endian = Endian::LITTLE) const;
+  uint32_t four_byte_int(std::vector<uint8_t>& buffer, size_t index,
+                         Endian endian = Endian::LITTLE) const;
+
+  constexpr T eight_bit_samp(uint8_t samp) const;
+  constexpr T sixteen_bit_samp(int16_t samp) const;
+  constexpr T twenty_four_bit_samp(int32_t samp) const;
+  constexpr T thirty_two_bit_samp(int32_t samp) const;
+
+  std::string fmt_from_int(uint16_t fmt) const;
+
+  AudioFmt format_;
+  SmpFmt sample_format_;
+  uint16_t channels_;
+  uint32_t sample_rate_;
+  uint32_t filesize_;
+  uint16_t bit_depth_;
+  uint16_t sample_freq_;
+  uint16_t block_alignment_;
 };

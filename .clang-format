@@ -1,0 +1,8 @@
+BasedOnStyle: Google
+
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+QualifierAlignment: Right
+
+IncludeBlocks: Merge

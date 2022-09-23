@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/twofold.dir/twofold.cpp.o CMakeFiles/twofold.dir/audio.cpp.o -o twofold 
+/usr/bin/c++ CMakeFiles/twofold.dir/twofold.cpp.o CMakeFiles/twofold.dir/audio.cpp.o -o twofold  /usr/lib/libpulse.so -lpulse-simple /usr/lib/libfftw3f.so /usr/lib/libfftw3.so /usr/lib/libfftw3l.so 

@@ -108,6 +108,10 @@ twofold_EXTERNAL_OBJECTS =
 src/twofold: src/CMakeFiles/twofold.dir/twofold.cpp.o
 src/twofold: src/CMakeFiles/twofold.dir/audio.cpp.o
 src/twofold: src/CMakeFiles/twofold.dir/build.make
+src/twofold: /usr/lib/libpulse.so
+src/twofold: /usr/lib/libfftw3f.so
+src/twofold: /usr/lib/libfftw3.so
+src/twofold: /usr/lib/libfftw3l.so
 src/twofold: src/CMakeFiles/twofold.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable twofold"
 	cd /home/acdamiani/Documents/twofold/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/twofold.dir/link.txt --verbose=$(VERBOSE)
