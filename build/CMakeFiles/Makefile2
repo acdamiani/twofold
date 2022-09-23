@@ -96,12 +96,12 @@ src/clean: src/CMakeFiles/twofold.dir/clean
 src/CMakeFiles/twofold.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=1,2,3 "Built target twofold"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target twofold"
 .PHONY : src/CMakeFiles/twofold.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/twofold.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdamiani/Documents/twofold/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdamiani/Documents/twofold/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/twofold.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdamiani/Documents/twofold/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/twofold.dir/rule

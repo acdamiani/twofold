@@ -165,8 +165,6 @@ bool Audio<T>::load(std::vector<uint8_t> buffer, AudioType type) {
 
       samples_.resize(channels_);
 
-      printf("%zu\n", num_samples);
-
       for (size_t i = 0; i < num_samples; i++) {
         for (uint16_t c = 0; c < channels_; c++) {
           size_t i_samp =
@@ -256,9 +254,6 @@ std::vector<T> Audio<T>::samples() const {
       ret.push_back(samples_[j][i]);
     }
   }
-
-  printf("1: %zu\n", ret.size());
-  printf("2: %zu\n", samples_[0].size());
 
   return ret;
 }

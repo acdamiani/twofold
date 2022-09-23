@@ -58,6 +58,7 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/12.2.0/pstl/pstl_config.h \
  /usr/include/c++/12.2.0/bits/cpp_type_traits.h \
  /usr/include/c++/12.2.0/ext/type_traits.h /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
@@ -70,8 +71,36 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/12.2.0/cstddef \
- /usr/include/c++/12.2.0/cstdio /usr/include/stdio.h \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/12.2.0/bits/specfun.h \
+ /usr/include/c++/12.2.0/bits/stl_algobase.h \
+ /usr/include/c++/12.2.0/bits/functexcept.h \
+ /usr/include/c++/12.2.0/bits/exception_defines.h \
+ /usr/include/c++/12.2.0/ext/numeric_traits.h \
+ /usr/include/c++/12.2.0/bits/stl_pair.h \
+ /usr/include/c++/12.2.0/type_traits /usr/include/c++/12.2.0/bits/move.h \
+ /usr/include/c++/12.2.0/bits/utility.h \
+ /usr/include/c++/12.2.0/bits/stl_iterator_base_types.h \
+ /usr/include/c++/12.2.0/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/12.2.0/bits/concept_check.h \
+ /usr/include/c++/12.2.0/debug/assertions.h \
+ /usr/include/c++/12.2.0/bits/stl_iterator.h \
+ /usr/include/c++/12.2.0/bits/ptr_traits.h \
+ /usr/include/c++/12.2.0/debug/debug.h \
+ /usr/include/c++/12.2.0/bits/predefined_ops.h \
+ /usr/include/c++/12.2.0/limits /usr/include/c++/12.2.0/tr1/gamma.tcc \
+ /usr/include/c++/12.2.0/tr1/special_function_util.h \
+ /usr/include/c++/12.2.0/tr1/bessel_function.tcc \
+ /usr/include/c++/12.2.0/tr1/beta_function.tcc \
+ /usr/include/c++/12.2.0/tr1/ell_integral.tcc \
+ /usr/include/c++/12.2.0/tr1/exp_integral.tcc \
+ /usr/include/c++/12.2.0/tr1/hypergeometric.tcc \
+ /usr/include/c++/12.2.0/tr1/legendre_function.tcc \
+ /usr/include/c++/12.2.0/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/12.2.0/tr1/poly_hermite.tcc \
+ /usr/include/c++/12.2.0/tr1/poly_laguerre.tcc \
+ /usr/include/c++/12.2.0/tr1/riemann_zeta.tcc \
+ /usr/include/c++/12.2.0/cstddef /usr/include/c++/12.2.0/cstdio \
+ /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
@@ -86,11 +115,9 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/bits/types/mbstate_t.h /usr/include/c++/12.2.0/exception \
  /usr/include/c++/12.2.0/bits/exception.h \
  /usr/include/c++/12.2.0/bits/exception_ptr.h \
- /usr/include/c++/12.2.0/bits/exception_defines.h \
  /usr/include/c++/12.2.0/bits/cxxabi_init_exception.h \
  /usr/include/c++/12.2.0/typeinfo \
  /usr/include/c++/12.2.0/bits/hash_bytes.h /usr/include/c++/12.2.0/new \
- /usr/include/c++/12.2.0/bits/move.h /usr/include/c++/12.2.0/type_traits \
  /usr/include/c++/12.2.0/bits/nested_exception.h \
  /usr/include/c++/12.2.0/bits/char_traits.h \
  /usr/include/c++/12.2.0/cstdint /usr/include/c++/12.2.0/bits/localefwd.h \
@@ -113,23 +140,10 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/c++/12.2.0/string /usr/include/c++/12.2.0/bits/allocator.h \
  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
  /usr/include/c++/12.2.0/bits/new_allocator.h \
- /usr/include/c++/12.2.0/bits/functexcept.h \
  /usr/include/c++/12.2.0/bits/ostream_insert.h \
  /usr/include/c++/12.2.0/bits/cxxabi_forced.h \
- /usr/include/c++/12.2.0/bits/stl_iterator_base_types.h \
- /usr/include/c++/12.2.0/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/12.2.0/bits/concept_check.h \
- /usr/include/c++/12.2.0/debug/assertions.h \
- /usr/include/c++/12.2.0/bits/stl_iterator.h \
- /usr/include/c++/12.2.0/bits/ptr_traits.h \
  /usr/include/c++/12.2.0/bits/stl_function.h \
  /usr/include/c++/12.2.0/backward/binders.h \
- /usr/include/c++/12.2.0/ext/numeric_traits.h \
- /usr/include/c++/12.2.0/bits/stl_algobase.h \
- /usr/include/c++/12.2.0/bits/stl_pair.h \
- /usr/include/c++/12.2.0/bits/utility.h \
- /usr/include/c++/12.2.0/debug/debug.h \
- /usr/include/c++/12.2.0/bits/predefined_ops.h \
  /usr/include/c++/12.2.0/bits/refwrap.h \
  /usr/include/c++/12.2.0/bits/invoke.h \
  /usr/include/c++/12.2.0/bits/range_access.h \
@@ -138,6 +152,9 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/c++/12.2.0/ext/alloc_traits.h \
  /usr/include/c++/12.2.0/bits/alloc_traits.h \
  /usr/include/c++/12.2.0/bits/stl_construct.h \
+ /usr/include/c++/12.2.0/string_view \
+ /usr/include/c++/12.2.0/bits/functional_hash.h \
+ /usr/include/c++/12.2.0/bits/string_view.tcc \
  /usr/include/c++/12.2.0/ext/string_conversions.h \
  /usr/include/c++/12.2.0/cstdlib /usr/include/c++/12.2.0/cerrno \
  /usr/include/errno.h /usr/include/bits/errno.h \
@@ -145,7 +162,6 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h \
  /usr/include/c++/12.2.0/bits/charconv.h \
- /usr/include/c++/12.2.0/bits/functional_hash.h \
  /usr/include/c++/12.2.0/bits/basic_string.tcc \
  /usr/include/c++/12.2.0/bits/locale_classes.tcc \
  /usr/include/c++/12.2.0/system_error \
@@ -162,7 +178,8 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/c++/12.2.0/bits/locale_facets.tcc \
  /usr/include/c++/12.2.0/bits/basic_ios.tcc \
  /usr/include/c++/12.2.0/bits/ostream.tcc /usr/include/c++/12.2.0/istream \
- /usr/include/c++/12.2.0/bits/istream.tcc /usr/include/c++/12.2.0/vector \
+ /usr/include/c++/12.2.0/bits/istream.tcc /usr/include/c++/12.2.0/utility \
+ /usr/include/c++/12.2.0/bits/stl_relops.h /usr/include/c++/12.2.0/vector \
  /usr/include/c++/12.2.0/bits/stl_uninitialized.h \
  /usr/include/c++/12.2.0/bits/stl_vector.h \
  /usr/include/c++/12.2.0/bits/stl_bvector.h \
@@ -177,4 +194,10 @@ src/CMakeFiles/twofold.dir/twofold.cpp.o: \
  /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
  /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
- /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h
+ /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
+ /home/acdamiani/Documents/twofold/include/transform.h \
+ /usr/include/fftw3.h /usr/include/c++/12.2.0/complex \
+ /usr/include/c++/12.2.0/sstream /usr/include/c++/12.2.0/bits/sstream.tcc \
+ /usr/include/c++/12.2.0/tuple \
+ /usr/include/c++/12.2.0/bits/uses_allocator.h \
+ /home/acdamiani/Documents/twofold/include/window.h

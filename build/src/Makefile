@@ -154,6 +154,30 @@ audio.cpp.s:
 	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/audio.cpp.s
 .PHONY : audio.cpp.s
 
+transform.o: transform.cpp.o
+.PHONY : transform.o
+
+# target to build an object file
+transform.cpp.o:
+	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/transform.cpp.o
+.PHONY : transform.cpp.o
+
+transform.i: transform.cpp.i
+.PHONY : transform.i
+
+# target to preprocess a source file
+transform.cpp.i:
+	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/transform.cpp.i
+.PHONY : transform.cpp.i
+
+transform.s: transform.cpp.s
+.PHONY : transform.s
+
+# target to generate assembly for a file
+transform.cpp.s:
+	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/transform.cpp.s
+.PHONY : transform.cpp.s
+
 twofold.o: twofold.cpp.o
 .PHONY : twofold.o
 
@@ -178,6 +202,30 @@ twofold.cpp.s:
 	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/twofold.cpp.s
 .PHONY : twofold.cpp.s
 
+window.o: window.cpp.o
+.PHONY : window.o
+
+# target to build an object file
+window.cpp.o:
+	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/window.cpp.o
+.PHONY : window.cpp.o
+
+window.i: window.cpp.i
+.PHONY : window.i
+
+# target to preprocess a source file
+window.cpp.i:
+	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/window.cpp.i
+.PHONY : window.cpp.i
+
+window.s: window.cpp.s
+.PHONY : window.s
+
+# target to generate assembly for a file
+window.cpp.s:
+	cd /home/acdamiani/Documents/twofold/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/twofold.dir/build.make src/CMakeFiles/twofold.dir/window.cpp.s
+.PHONY : window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -190,9 +238,15 @@ help:
 	@echo "... audio.o"
 	@echo "... audio.i"
 	@echo "... audio.s"
+	@echo "... transform.o"
+	@echo "... transform.i"
+	@echo "... transform.s"
 	@echo "... twofold.o"
 	@echo "... twofold.i"
 	@echo "... twofold.s"
+	@echo "... window.o"
+	@echo "... window.i"
+	@echo "... window.s"
 .PHONY : help
 
 

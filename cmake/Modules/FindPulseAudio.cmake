@@ -40,8 +40,7 @@ find_path(PULSEAUDIO_INCLUDE_DIR pulse/pulseaudio.h
 
 find_library(PULSEAUDIO_LIBRARY NAMES pulse libpulse
    HINTS
-   ${PC_PULSEAUDIO_LIBDIR}
-   ${PC_PULSEAUDIO_LIBRARY_DIRS}
+   ${PC_PULSEAUDIO_LIBDIR} ${PC_PULSEAUDIO_LIBRARY_DIRS}
    )
 
 find_library(PULSEAUDIO_MAINLOOP_LIBRARY NAMES pulse-mainloop pulse-mainloop-glib libpulse-mainloop-glib

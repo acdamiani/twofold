@@ -2,9 +2,13 @@ project(Twofold)
 
 set(TARGET_SRC ${CMAKE_SOURCE_DIR}/src/twofold.cpp
                ${CMAKE_SOURCE_DIR}/src/audio.cpp
+               ${CMAKE_SOURCE_DIR}/src/transform.cpp
+               ${CMAKE_SOURCE_DIR}/src/window.cpp
 )
 
 set(TARGET_H   ${CMAKE_SOURCE_DIR}/include/audio.h
+               ${CMAKE_SOURCE_DIR}/include/transform.h
+               ${CMAKE_SOURCE_DIR}/include/window.h
 )
 
 include_directories(${CMAKE_SOURCE_DIR}/include)

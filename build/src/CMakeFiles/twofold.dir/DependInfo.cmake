@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/acdamiani/Documents/twofold/src/audio.cpp" "src/CMakeFiles/twofold.dir/audio.cpp.o" "gcc" "src/CMakeFiles/twofold.dir/audio.cpp.o.d"
+  "/home/acdamiani/Documents/twofold/src/transform.cpp" "src/CMakeFiles/twofold.dir/transform.cpp.o" "gcc" "src/CMakeFiles/twofold.dir/transform.cpp.o.d"
   "/home/acdamiani/Documents/twofold/src/twofold.cpp" "src/CMakeFiles/twofold.dir/twofold.cpp.o" "gcc" "src/CMakeFiles/twofold.dir/twofold.cpp.o.d"
+  "/home/acdamiani/Documents/twofold/src/window.cpp" "src/CMakeFiles/twofold.dir/window.cpp.o" "gcc" "src/CMakeFiles/twofold.dir/window.cpp.o.d"
   )
 
 # Targets to which this target links.

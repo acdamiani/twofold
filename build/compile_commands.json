@@ -1,12 +1,22 @@
 [
 {
   "directory": "/home/acdamiani/Documents/twofold/build/src",
-  "command": "/usr/bin/c++  -I/home/acdamiani/Documents/twofold/include -std=gnu++11 -o CMakeFiles/twofold.dir/twofold.cpp.o -c /home/acdamiani/Documents/twofold/src/twofold.cpp",
+  "command": "/usr/bin/c++  -I/home/acdamiani/Documents/twofold/include -std=gnu++17 -o CMakeFiles/twofold.dir/twofold.cpp.o -c /home/acdamiani/Documents/twofold/src/twofold.cpp",
   "file": "/home/acdamiani/Documents/twofold/src/twofold.cpp"
 },
 {
   "directory": "/home/acdamiani/Documents/twofold/build/src",
-  "command": "/usr/bin/c++  -I/home/acdamiani/Documents/twofold/include -std=gnu++11 -o CMakeFiles/twofold.dir/audio.cpp.o -c /home/acdamiani/Documents/twofold/src/audio.cpp",
+  "command": "/usr/bin/c++  -I/home/acdamiani/Documents/twofold/include -std=gnu++17 -o CMakeFiles/twofold.dir/audio.cpp.o -c /home/acdamiani/Documents/twofold/src/audio.cpp",
   "file": "/home/acdamiani/Documents/twofold/src/audio.cpp"
+},
+{
+  "directory": "/home/acdamiani/Documents/twofold/build/src",
+  "command": "/usr/bin/c++  -I/home/acdamiani/Documents/twofold/include -std=gnu++17 -o CMakeFiles/twofold.dir/transform.cpp.o -c /home/acdamiani/Documents/twofold/src/transform.cpp",
+  "file": "/home/acdamiani/Documents/twofold/src/transform.cpp"
+},
+{
+  "directory": "/home/acdamiani/Documents/twofold/build/src",
+  "command": "/usr/bin/c++  -I/home/acdamiani/Documents/twofold/include -std=gnu++17 -o CMakeFiles/twofold.dir/window.cpp.o -c /home/acdamiani/Documents/twofold/src/window.cpp",
+  "file": "/home/acdamiani/Documents/twofold/src/window.cpp"
 }
 ]

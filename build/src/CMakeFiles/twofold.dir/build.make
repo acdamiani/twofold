@@ -97,23 +97,55 @@ src/CMakeFiles/twofold.dir/audio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/twofold.dir/audio.cpp.s"
 	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acdamiani/Documents/twofold/src/audio.cpp -o CMakeFiles/twofold.dir/audio.cpp.s
 
+src/CMakeFiles/twofold.dir/transform.cpp.o: src/CMakeFiles/twofold.dir/flags.make
+src/CMakeFiles/twofold.dir/transform.cpp.o: /home/acdamiani/Documents/twofold/src/transform.cpp
+src/CMakeFiles/twofold.dir/transform.cpp.o: src/CMakeFiles/twofold.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/twofold.dir/transform.cpp.o"
+	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/twofold.dir/transform.cpp.o -MF CMakeFiles/twofold.dir/transform.cpp.o.d -o CMakeFiles/twofold.dir/transform.cpp.o -c /home/acdamiani/Documents/twofold/src/transform.cpp
+
+src/CMakeFiles/twofold.dir/transform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/twofold.dir/transform.cpp.i"
+	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acdamiani/Documents/twofold/src/transform.cpp > CMakeFiles/twofold.dir/transform.cpp.i
+
+src/CMakeFiles/twofold.dir/transform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/twofold.dir/transform.cpp.s"
+	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acdamiani/Documents/twofold/src/transform.cpp -o CMakeFiles/twofold.dir/transform.cpp.s
+
+src/CMakeFiles/twofold.dir/window.cpp.o: src/CMakeFiles/twofold.dir/flags.make
+src/CMakeFiles/twofold.dir/window.cpp.o: /home/acdamiani/Documents/twofold/src/window.cpp
+src/CMakeFiles/twofold.dir/window.cpp.o: src/CMakeFiles/twofold.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/twofold.dir/window.cpp.o"
+	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/twofold.dir/window.cpp.o -MF CMakeFiles/twofold.dir/window.cpp.o.d -o CMakeFiles/twofold.dir/window.cpp.o -c /home/acdamiani/Documents/twofold/src/window.cpp
+
+src/CMakeFiles/twofold.dir/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/twofold.dir/window.cpp.i"
+	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/acdamiani/Documents/twofold/src/window.cpp > CMakeFiles/twofold.dir/window.cpp.i
+
+src/CMakeFiles/twofold.dir/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/twofold.dir/window.cpp.s"
+	cd /home/acdamiani/Documents/twofold/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/acdamiani/Documents/twofold/src/window.cpp -o CMakeFiles/twofold.dir/window.cpp.s
+
 # Object files for target twofold
 twofold_OBJECTS = \
 "CMakeFiles/twofold.dir/twofold.cpp.o" \
-"CMakeFiles/twofold.dir/audio.cpp.o"
+"CMakeFiles/twofold.dir/audio.cpp.o" \
+"CMakeFiles/twofold.dir/transform.cpp.o" \
+"CMakeFiles/twofold.dir/window.cpp.o"
 
 # External object files for target twofold
 twofold_EXTERNAL_OBJECTS =
 
 src/twofold: src/CMakeFiles/twofold.dir/twofold.cpp.o
 src/twofold: src/CMakeFiles/twofold.dir/audio.cpp.o
+src/twofold: src/CMakeFiles/twofold.dir/transform.cpp.o
+src/twofold: src/CMakeFiles/twofold.dir/window.cpp.o
 src/twofold: src/CMakeFiles/twofold.dir/build.make
 src/twofold: /usr/lib/libpulse.so
 src/twofold: /usr/lib/libfftw3f.so
 src/twofold: /usr/lib/libfftw3.so
 src/twofold: /usr/lib/libfftw3l.so
 src/twofold: src/CMakeFiles/twofold.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable twofold"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable twofold"
 	cd /home/acdamiani/Documents/twofold/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/twofold.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/acdamiani/Documents/twofold/build/src && ./twofold
 
