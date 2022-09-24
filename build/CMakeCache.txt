@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib64/cmake/Boost-1.80.0
+
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/libboost_filesystem.so.1.80.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+Boost_IOSTREAMS_LIBRARY_RELEASE:STRING=/usr/lib/libboost_iostreams.so.1.80.0
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/libboost_system.so.1.80.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -266,14 +278,26 @@ FFTW_LONGDOUBLE_OPENMP_LIB:FILEPATH=/usr/lib/libfftw3l_omp.so
 //Path to a library.
 FFTW_LONGDOUBLE_THREADS_LIB:FILEPATH=/usr/lib/libfftw3l_threads.so
 
+//build gnuplot iostream examples
+GnuPlotIostream_BuildExamples:BOOL=OFF
+
+//build gnuplot iostream tests
+GnuPlotIostream_BuildTests:BOOL=OFF
+
+//Value Computed by CMake
+GnuPlot_iostream_BINARY_DIR:STATIC=/home/acdamiani/Documents/twofold/build/third_party/gnuplot-iostream
+
+//Value Computed by CMake
+GnuPlot_iostream_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+GnuPlot_iostream_SOURCE_DIR:STATIC=/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
-
-//The directory containing a CMake configuration file for PULSEAUDIO.
-PULSEAUDIO_DIR:PATH=PULSEAUDIO_DIR-NOTFOUND
 
 //Path to a file.
 PULSEAUDIO_INCLUDE_DIR:PATH=/usr/include
@@ -288,13 +312,28 @@ PULSEAUDIO_MAINLOOP_LIBRARY:FILEPATH=/usr/lib/libpulse-mainloop-glib.so
 PULSEAUDIO_VERSION:STRING=16.1.0
 
 //Value Computed by CMake
-Twofold_BINARY_DIR:STATIC=/home/acdamiani/Documents/twofold/build/src
+Twofold_BINARY_DIR:STATIC=/home/acdamiani/Documents/twofold/build/third_party
 
 //Value Computed by CMake
 Twofold_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-Twofold_SOURCE_DIR:STATIC=/home/acdamiani/Documents/twofold/src
+Twofold_SOURCE_DIR:STATIC=/home/acdamiani/Documents/twofold/third_party
+
+//The directory containing a CMake configuration file for boost_atomic.
+boost_atomic_DIR:PATH=/usr/lib64/cmake/boost_atomic-1.80.0
+
+//The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=/usr/lib64/cmake/boost_filesystem-1.80.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib64/cmake/boost_headers-1.80.0
+
+//The directory containing a CMake configuration file for boost_iostreams.
+boost_iostreams_DIR:PATH=/usr/lib64/cmake/boost_iostreams-1.80.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib64/cmake/boost_system-1.80.0
 
 //Path to a library.
 pkgcfg_lib_PC_PULSEAUDIO_MAINLOOP_glib-2.0:FILEPATH=/usr/lib/libglib-2.0.so
@@ -316,6 +355,8 @@ pkgcfg_lib_PKG_FFTW_fftw3:FILEPATH=/usr/lib/libfftw3.so
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -418,7 +459,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -487,8 +528,10 @@ FFTW_LONGDOUBLE_MPI_LIB-ADVANCED:INTERNAL=1
 FFTW_LONGDOUBLE_OPENMP_LIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FFTW_LONGDOUBLE_THREADS_LIB
 FFTW_LONGDOUBLE_THREADS_LIB-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib64/cmake/Boost-1.80.0/BoostConfig.cmake][cfound components: iostreams system filesystem ][v1.80.0()]
 //Details about finding FFTW
-FIND_PACKAGE_MESSAGE_DETAILS_FFTW:INTERNAL=[/usr/include][cfound components: FLOAT_LIB DOUBLE_LIB ][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_FFTW:INTERNAL=[/usr/include][cfound components: FLOAT_LIB DOUBLE_LIB LONGDOUBLE_LIB ][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.0()]
 //Details about finding PulseAudio
@@ -616,6 +659,16 @@ __pkg_config_arguments_PKG_FFTW:INTERNAL=QUIET;fftw3
 __pkg_config_checked_PC_PULSEAUDIO:INTERNAL=1
 __pkg_config_checked_PC_PULSEAUDIO_MAINLOOP:INTERNAL=1
 __pkg_config_checked_PKG_FFTW:INTERNAL=1
+//ADVANCED property for variable: boost_atomic_DIR
+boost_atomic_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_filesystem_DIR
+boost_filesystem_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_iostreams_DIR
+boost_iostreams_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_PULSEAUDIO_MAINLOOP_glib-2.0
 pkgcfg_lib_PC_PULSEAUDIO_MAINLOOP_glib-2.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_PULSEAUDIO_MAINLOOP_pulse

@@ -64,14 +64,17 @@ CMAKE_BINARY_DIR = /home/acdamiani/Documents/twofold/build
 
 # The main recursive "all" target.
 all: src/all
+all: third_party/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
+preinstall: third_party/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: src/clean
+clean: third_party/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,6 +91,36 @@ src/preinstall:
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/twofold.dir/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory third_party
+
+# Recursive "all" directory target.
+third_party/all: third_party/gnuplot-iostream/all
+.PHONY : third_party/all
+
+# Recursive "preinstall" directory target.
+third_party/preinstall: third_party/gnuplot-iostream/preinstall
+.PHONY : third_party/preinstall
+
+# Recursive "clean" directory target.
+third_party/clean: third_party/gnuplot-iostream/clean
+.PHONY : third_party/clean
+
+#=============================================================================
+# Directory level rules for directory third_party/gnuplot-iostream
+
+# Recursive "all" directory target.
+third_party/gnuplot-iostream/all:
+.PHONY : third_party/gnuplot-iostream/all
+
+# Recursive "preinstall" directory target.
+third_party/gnuplot-iostream/preinstall:
+.PHONY : third_party/gnuplot-iostream/preinstall
+
+# Recursive "clean" directory target.
+third_party/gnuplot-iostream/clean:
+.PHONY : third_party/gnuplot-iostream/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/twofold.dir

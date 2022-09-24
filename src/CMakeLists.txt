@@ -11,16 +11,16 @@ set(TARGET_H   ${CMAKE_SOURCE_DIR}/include/audio.h
                ${CMAKE_SOURCE_DIR}/include/window.h
 )
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
-
 find_package(
     FFTW REQUIRED
-    COMPONENTS FLOAT_LIB DOUBLE_LIB
+    COMPONENTS FLOAT_LIB DOUBLE_LIB LONGDOUBLE_LIB
 )
 
 find_package(PulseAudio REQUIRED)
 
 add_executable(twofold ${TARGET_SRC} ${TARGET_H})
+
+target_include_directories(twofold PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 message(INFO ${PULSEAUDIO_MAINLOOP_LIBRARY})
 
@@ -35,6 +35,11 @@ target_link_libraries(
   twofold
   ${PULSEAUDIO_LIBRARY}
   pulse-simple
+)
+
+target_link_libraries(
+  twofold
+  gnuplot_iostream
 )
 
 add_custom_command(

@@ -144,6 +144,10 @@ src/twofold: /usr/lib/libpulse.so
 src/twofold: /usr/lib/libfftw3f.so
 src/twofold: /usr/lib/libfftw3.so
 src/twofold: /usr/lib/libfftw3l.so
+src/twofold: /usr/lib/libboost_iostreams.so.1.80.0
+src/twofold: /usr/lib/libboost_system.so.1.80.0
+src/twofold: /usr/lib/libboost_filesystem.so.1.80.0
+src/twofold: /usr/lib/libboost_atomic.so.1.80.0
 src/twofold: src/CMakeFiles/twofold.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/acdamiani/Documents/twofold/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable twofold"
 	cd /home/acdamiani/Documents/twofold/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/twofold.dir/link.txt --verbose=$(VERBOSE)
