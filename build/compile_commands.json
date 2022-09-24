@@ -1,22 +1,22 @@
 [
 {
   "directory": "/home/acdamiani/Documents/twofold/build/src",
-  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/twofold.cpp.o -c /home/acdamiani/Documents/twofold/src/twofold.cpp",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/twofold.cpp.o -c /home/acdamiani/Documents/twofold/src/twofold.cpp",
   "file": "/home/acdamiani/Documents/twofold/src/twofold.cpp"
 },
 {
   "directory": "/home/acdamiani/Documents/twofold/build/src",
-  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/audio.cpp.o -c /home/acdamiani/Documents/twofold/src/audio.cpp",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/audio.cpp.o -c /home/acdamiani/Documents/twofold/src/audio.cpp",
   "file": "/home/acdamiani/Documents/twofold/src/audio.cpp"
 },
 {
   "directory": "/home/acdamiani/Documents/twofold/build/src",
-  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/transform.cpp.o -c /home/acdamiani/Documents/twofold/src/transform.cpp",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/transform.cpp.o -c /home/acdamiani/Documents/twofold/src/transform.cpp",
   "file": "/home/acdamiani/Documents/twofold/src/transform.cpp"
 },
 {
   "directory": "/home/acdamiani/Documents/twofold/build/src",
-  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/window.cpp.o -c /home/acdamiani/Documents/twofold/src/window.cpp",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream -std=gnu++17 -o CMakeFiles/twofold.dir/window.cpp.o -c /home/acdamiani/Documents/twofold/src/window.cpp",
   "file": "/home/acdamiani/Documents/twofold/src/window.cpp"
 }
 ]

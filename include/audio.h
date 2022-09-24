@@ -26,6 +26,7 @@ class Audio {
   Audio(std::string file);
 
   std::vector<T> samples() const;
+  std::vector<T> samples(uint8_t channel) const;
 
   bool load(std::string file);
   bool load(std::string file, AudioType type);

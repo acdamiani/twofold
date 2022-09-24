@@ -87,8 +87,9 @@ Transformer::~Transformer() {
   fftw_destroy_plan(fftw_plan_);
 }
 
-void Transformer::transform(std::vector<double>& in,
-                            std::vector<std::pair<double, double>>& out) {
+void Transformer::transform(
+    std::vector<double>& in,
+    std::vector<std::tuple<double, double, double>>& out) {
   out.clear();
 
   double overlap = std::max(0.0, std::min(overlap_, 0.5));
@@ -104,23 +105,29 @@ void Transformer::transform(std::vector<double>& in,
   for (size_t i = 0; i < in.size(); i += N_ - o)
     sampled.insert(sampled.end(), buf_c.begin() + i, buf_c.begin() + i + N_);
 
+  double real_interval =
+      static_cast<double>(N_) / static_cast<double>(sampling_rate_);
+
   for (size_t i = 0; i < sampled.size(); i += N_) {
     for (size_t j = 0; j < N_; j++) {
       double windowed = win(func_, sampled[i + j], j, N_);
-
       fftw_in_[j] = sampled[i + j] = windowed;
     }
 
     fftw_execute(fftw_plan_);
+
+    size_t i_u = i / N_;
+    double t = static_cast<double>(i_u) * real_interval;
 
     for (size_t j = 0; j < N_; j++) {
       std::complex<double> c = fftw_out_[j];
       double v = c.real() * c.real() + c.imag() * c.imag();
       if (get_db_) v = 10 * std::log10(v);
 
-      out.push_back(std::pair<double, double>(
-          (static_cast<double>(sampling_rate_) / static_cast<double>(N_)) * j,
-          v));
+      double f =
+          j * (static_cast<double>(sampling_rate_) / static_cast<double>(N_));
+
+      out.push_back(std::tuple<double, double, double>(t, f, v));
     }
   }
 }

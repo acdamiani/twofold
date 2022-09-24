@@ -259,6 +259,11 @@ std::vector<T> Audio<T>::samples() const {
 }
 
 template <class T>
+std::vector<T> Audio<T>::samples(uint8_t channel) const {
+  return samples_[channel];
+}
+
+template <class T>
 bool Audio<T>::mono() const {
   return channels_ == 1;
 }

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
 
-CXX_INCLUDES = -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream
+CXX_INCLUDES = -I/home/acdamiani/Documents/twofold/include -I/home/acdamiani/Documents/twofold/third_party/gnuplot-iostream
 
 CXX_FLAGS = -std=gnu++17
 

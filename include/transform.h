@@ -14,7 +14,7 @@ class Transformer {
   ~Transformer();
 
   void transform(std::vector<double>& in,
-                 std::vector<std::pair<double, double>>& out);
+                 std::vector<std::tuple<double, double, double>>& out);
   uint32_t N();
 
  private:
